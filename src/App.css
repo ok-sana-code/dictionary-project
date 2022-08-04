@@ -1,5 +1,25 @@
-.App h1{
- text-align: center;
-  margin: 30px auto;
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App h1 {
+  font-size: 60px;
+  text-align: center;
   color: blueviolet;
+  margin: 10px;
+}
+.App img{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App main {
+  padding: 20px;
+}
+
+.App footer {
+  text-align: center;
+  margin-top: 30px;
 }

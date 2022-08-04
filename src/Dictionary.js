@@ -24,15 +24,17 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
+      <form className="shadow p-5" onSubmit={search}>
+        <h2>What word do you want to look up?</h2>
         <input
+          className="form-control search-input"
           type="rearch"
           placeholder="Type a word.."
           autoFocus={true}
           onChange={HandleChangeValue}
         ></input>
       </form>
-      <Results results={results}/>
+      <Results results={results} />
     </div>
   );
 }
