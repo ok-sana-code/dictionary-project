@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
         <header className="App-header">
           <h1>Dictionary</h1>
-          <img className='img-fluid' src={img} />
+          <img className='img-fluid' src={img} alt="dictionary" />
         </header>
         <main>
           <Dictionary />
