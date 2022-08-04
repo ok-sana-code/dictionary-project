@@ -5,7 +5,7 @@ export default function Results(props) {
     return (
       <div className="Results">
         <h2>{props.results.word}</h2>
-        <p>
+        <div>
           {props.results.meanings.map(function Meanings(meaning, index) {
             return (
               <div key={index}>
@@ -13,7 +13,7 @@ export default function Results(props) {
               </div>
             );
           })}
-        </p>
+        </div>
       </div>
     );
   } else {
