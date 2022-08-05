@@ -24,7 +24,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form className="shadow p-5" onSubmit={search}>
+      <form className="shadow p-4" onSubmit={search}>
         <h2>What word do you want to look up?</h2>
         <input
           className="form-control search-input"

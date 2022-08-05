@@ -1,5 +1,11 @@
 .Dictionary form {
+  margin-top: 20px;
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
+}
+@media(max-width:700px){
+  .Dictionary h2{
+    font-size: 20px;
+  }
 }

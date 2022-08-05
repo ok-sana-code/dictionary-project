@@ -5,7 +5,7 @@ import img from "./img.gif"
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="container-fluid">
         <header className="App-header">
           <h1>Dictionary</h1>
           <img className='img-fluid' src={img} alt="dictionary" />

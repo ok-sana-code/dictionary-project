@@ -1,6 +1,6 @@
 .App {
   min-height: 100vh;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .App h1 {
@@ -10,7 +10,7 @@
   margin: 10px;
 }
 .App img{
-  width: 300px;
+  max-width: 300px;
   display: block;
   margin: 0 auto;
 }
@@ -21,5 +21,6 @@
 
 .App footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
