@@ -4,7 +4,7 @@ import './App.css';
 import img from "./img.gif"
 export default function App() {
   return (
-    <div className="App">
+    <div className="App px-sm-5 mx-sm-3">
       <div className="container-fluid">
         <header className="App-header">
           <h1>Dictionary</h1>
