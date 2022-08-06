@@ -11,7 +11,7 @@ export default function App() {
           <img className='img-fluid' src={img} alt="dictionary" />
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="freedom"/>
         </main>
         <footer>
           <small>

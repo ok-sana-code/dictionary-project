@@ -1,4 +1,7 @@
 .Results section {
 padding: 30px;
-
+}
+.Results h2{
+    font-size: 40px;
+    padding-bottom: 10px;
 }
