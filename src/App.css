@@ -1,5 +1,5 @@
 .App {
-  min-height: 100vh;
+   min-height: 100vh;
   padding-top: 20px;
 }
 
@@ -10,9 +10,9 @@
   margin: 10px;
 }
 .App img{
-  max-width: 300px;
+  max-width: 270px;
   display: block;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .App main {
@@ -24,3 +24,5 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
