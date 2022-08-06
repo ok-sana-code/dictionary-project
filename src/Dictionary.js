@@ -24,16 +24,18 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form className="shadow p-4" onSubmit={search}>
-        <h2>What word do you want to look up?</h2>
-        <input
-          className="form-control search-input"
-          type="rearch"
-          placeholder="Type a word.."
-          autoFocus={true}
-          onChange={HandleChangeValue}
-        ></input>
-      </form>
+      <section>
+        <form className="shadow p-4" onSubmit={search}>
+          <h2>What word do you want to look up?</h2>
+          <input
+            className="form-control search-input"
+            type="rearch"
+            placeholder="Type a word.."
+            autoFocus={true}
+            onChange={HandleChangeValue}
+          ></input>
+        </form>
+      </section>
       <Results results={results} />
     </div>
   );

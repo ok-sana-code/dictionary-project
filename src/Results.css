@@ -1,7 +1,4 @@
-.Results-word {
-  margin: 20px auto;
-  padding: 30px;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: white;
+.Results section {
+padding: 30px;
+
 }
