@@ -1,6 +1,6 @@
 .App {
-   min-height: 100vh;
-  padding-top: 20px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .App h1 {
@@ -9,14 +9,15 @@
   color: blueviolet;
   margin: 10px;
 }
-.App img{
-  max-width: 263px;
+.App-header img {
+  max-width: 300px;
   display: block;
   margin: 15px auto;
 }
-
-.App main {
-  padding: 20px;
+.App img {
+  max-width: 192px;
+  display: block;
+  margin: 10px auto;
 }
 
 .App footer {
@@ -24,5 +25,18 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+a{
+  color: blueviolet;
+}
 
-
+@media (max-width: 700px) {
+  .App h1{
+      font-size: 40px;
+  }
+  .Main-content img {
+    display: none;
+  }
+  .Photos-link{
+    display: none;
+  }
+}

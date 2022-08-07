@@ -4,13 +4,13 @@ import './App.css';
 import img from "./img.gif"
 export default function App() {
   return (
-    <div className="App px-sm-5 mx-sm-3">
+    <div className="App">
       <div className="container-fluid">
         <header className="App-header">
           <h1>Dictionary</h1>
           <img className="img-fluid" src={img} alt="dictionary" />
         </header>
-        <main>
+        <main className="Main-content">
           <Dictionary defaultKeyword="freedom" />
         </main>
         <footer>
@@ -40,7 +40,7 @@ export default function App() {
               Netlify
             </a>
             <br />
-            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+            <a className='Photos-link' href="https://www.pexels.com">Photos provided by Pexels</a>
           </small>
         </footer>
       </div>
