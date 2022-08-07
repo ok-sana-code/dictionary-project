@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./Photos.css"
 export default function Photos(props){
     console.log(props.photos);
     if (props.photos){
 return (
-  <section className="shadow row">
+  <section className="Photos shadow row">
     {props.photos.map(function (photo, index) {
       return (
         <div key={index}>
@@ -14,7 +14,11 @@ return (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="img-fluid" src={photo.src.landscape} alt={photo.alt} />
+              <img
+                className="img-fluid"
+                src={photo.src.landscape}
+                alt={photo.alt}
+              />
             </a>
           </div>
         </div>
