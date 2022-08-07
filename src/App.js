@@ -39,6 +39,8 @@ export default function App() {
             >
               Netlify
             </a>
+            <br />
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
           </small>
         </footer>
       </div>
