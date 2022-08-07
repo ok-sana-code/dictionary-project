@@ -1,23 +1,22 @@
 import React from "react";
 import "./Phonetic.css";
+
+
 export default function Phonetic(props) {
-  if (props.phonetic.audio === "") {
-    return <div className="text">{props.phonetic.text}</div>;
-  } else {
-    return (
-      <div className="Phonetic">
-        <span className="text">{props.phonetic.text}</span>
-        
-          <a
-            className="audio"
-            href={props.phonetic.audio}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Listen
-          </a>
-        
-      </div>
-    );
-  }
+let audio = new Audio(props.phonetic.audio);
+function handleClick(event) {
+  audio.play();
+}
+if (props.phonetic.audio && props.phonetic.text) {
+  return (
+    <div className="Phonetic">
+      <span onClick={handleClick} className="icon">
+        🔉
+      </span>{" "}
+      <span className="text">{props.phonetic.text}</span>
+    </div>
+  );
+} else {
+  return null;
+}
 }
