@@ -25,18 +25,18 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-a{
+a {
   color: blueviolet;
 }
 
 @media (max-width: 700px) {
-  .App h1{
-      font-size: 40px;
+  .App h1 {
+    font-size: 40px;
   }
   .Main-content img {
     display: none;
   }
-  .Photos-link{
+  .Photos-link {
     display: none;
   }
 }
