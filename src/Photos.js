@@ -12,6 +12,7 @@ return (
               href={photo.src.landscape}
               target="_blank"
               rel="noopener noreferrer"
+              title="Full screen"
             >
               <img
                 className="img-fluid"

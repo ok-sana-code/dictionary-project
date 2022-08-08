@@ -10,7 +10,7 @@ function handleClick(event) {
 if (props.phonetic.audio && props.phonetic.text) {
   return (
     <div className="Phonetic">
-      <span onClick={handleClick} className="icon">
+      <span onClick={handleClick} title="Listen" className="icon">
         🔉
       </span>{" "}
       <span className="text">{props.phonetic.text}</span>

@@ -20,6 +20,7 @@ export default function App() {
               href="https://www.linkedin.com/in/oksana-shvets-548086244/"
               target="_blank"
               rel="noopener noreferrer"
+              title="Contact Oksana Shvets"
             >
               Oksana Shvets
             </a>{" "}
@@ -28,6 +29,7 @@ export default function App() {
               href="https://github.com/ok-sana-code/dictionary-project"
               target="_blank"
               rel="noopener noreferrer"
+              title="View github repository"
             >
               GitHub
             </a>{" "}
@@ -36,11 +38,20 @@ export default function App() {
               href="https://chipper-tulumba-b40688.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
+              title="Go to Netlify"
             >
               Netlify
             </a>
             <br />
-            <a className='Photos-link' href="https://www.pexels.com">Photos provided by Pexels</a>
+            <a
+              className="Photos-link"
+              href="https://www.pexels.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Visit https://www.pexels.com/uk-ua/"
+            >
+              Photos provided by Pexels
+            </a>
           </small>
         </footer>
       </div>
