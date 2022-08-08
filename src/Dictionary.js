@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
-import Photos from "./Photos"
+import Photos from "./Photos";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -26,12 +26,11 @@ export default function Dictionary(props) {
     // let apiKey = "563492ad6f917000010000017676f5e413034bda8240d0dbf78fba5f";
     let apiKey = `563492ad6f91700001000001d54191cc025248e79b0414eed08695dc`;
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&page=1&per_page=9`;
-    axios.get(pexelsApiUrl).then(handlePhotosResponse);
+    
     axios
       .get(pexelsApiUrl, { headers: { Authorization: `Bearer ${apiKey}` } })
       .then(handlePhotosResponse);
   }
-
 
   function HandleSubmit(event) {
     event.preventDefault();
@@ -50,16 +49,18 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <section>
-          <form className="shadow p-4" onSubmit={HandleSubmit}>
+        <section className="shadow">
+          <form className="form-inline  " onSubmit={HandleSubmit}>
             <h2>What word do you want to look up?</h2>
+
             <input
-              className="form-control search-input"
+              className="form-control search-input col-11"
               type="search"
               placeholder="Type a word.."
               autoFocus={true}
               onChange={HandleChangeValue}
             ></input>
+            <input type="submit" className="btn col-1" value="🔍"></input>
           </form>
         </section>
         <Results results={results} />
