@@ -60,7 +60,7 @@ export default function Dictionary(props) {
               autoFocus={true}
               onChange={HandleChangeValue}
             ></input>
-            <input type="submit" title="Search" className="btn col-1" value="🔍"></input>
+            <input type="submit" title="Search" className=" d-none d-sm-inline btn col-1" value="🔍"></input>
           </form>
         </section>
         <Results results={results} />
